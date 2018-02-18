@@ -1,0 +1,21 @@
+{
+  "name": "rey-node-s3-backup",
+  "version": "1.0.0",
+  "description": "Backup script (folders, mysql, mongodb)",
+  "main": "index.js",
+  "dependencies": {
+    "lodash": "^4.17.5",
+    "tar-fs": "^1.16.0",
+    "tar-stream": "^1.5.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github-web6:web6-fr/rey-node-s3-backup.git"
+  },
+  "author": "Pierre Aboucaya",
+  "license": "ISC"
+}
