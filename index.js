@@ -18,9 +18,7 @@ _.forEach(config.websites, function (conf, website) {
   if (conf.dirs) {
     pack.entry({name: 'dirs', type: 'directory'})
     _.forEach(conf.dirs, function (path, dir) {
-      var entry = pack.entry({name: 'dirs/' + dir + '.tar'}, function () {
-      })
-      tarfs.pack(path).pipe(entry.write)
+      tarfs.pack(path, { pack: pack })
     })
   }
   if (conf.dbs) {
